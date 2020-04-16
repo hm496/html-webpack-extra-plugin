@@ -1,7 +1,7 @@
 {
   "name": "html-webpack-extra-plugin",
   "version": "0.0.1",
-  "description": "Add new features for html-webpack-plugin",
+  "description": "Add some features for html-webpack-plugin",
   "main": "src/index.js",
   "keywords": [
     "webpack",

@@ -3,10 +3,10 @@ This plugin can override output.publicPath, and it can only work with html-webpa
 
 ## Installation  
 ```
-npm i -D html-webpack-extra-plugin  
+npm i -D html-webpack-extra-plugin
 ```
 
-## Usage
+## Usage  
 
 Simply add the plugin behind the HtmlWebpackPlugin:  
 
