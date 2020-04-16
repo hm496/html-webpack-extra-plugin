@@ -1,0 +1,33 @@
+{
+  "name": "html-webpack-extra-plugin",
+  "version": "0.0.1",
+  "description": "Add new features for html-webpack-plugin",
+  "main": "src/index.js",
+  "keywords": [
+    "webpack",
+    "plugin",
+    "html",
+    "html-webpack-plugin"
+  ],
+  "dependencies": {
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hm496/html-webpack-extra-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hm496/html-webpack-extra-plugin/issues"
+  },
+  "homepage": "https://github.com/hm496/html-webpack-extra-plugin#readme",
+  "author": {
+    "name": "hm496",
+    "email": "hm496@163.com"
+  },
+  "license": "MIT"
+}
