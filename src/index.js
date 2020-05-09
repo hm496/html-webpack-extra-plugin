@@ -6,10 +6,12 @@ module.exports = class htmlWebpackExtraPlugin {
       if (compilation.hooks.htmlWebpackPluginBeforeHtmlGeneration) {
         compilation.hooks.htmlWebpackPluginAlterAssetTags.tap(ID, (htmlPluginData) => {
           const oldPublicPath = compilation.options.output.publicPath;
-          const newPublicPath = htmlPluginData.plugin.options.publicPath;
+          let newPublicPath = htmlPluginData.plugin.options.publicPath;
           if (typeof newPublicPath !== 'string' || typeof oldPublicPath !== 'string') {
             return;
           }
+
+          newPublicPath = newPublicPath.replace(/([^/])$/, '$1/');
 
           htmlPluginData.head = htmlPluginData.head.map(tag => {
             return changeTagAttr(tag, oldPublicPath, newPublicPath);
